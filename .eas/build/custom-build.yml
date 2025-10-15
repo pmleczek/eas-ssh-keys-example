@@ -1,0 +1,7 @@
+build:
+ name: Check out project source code
+ steps:
+   - eas/checkout # Only check out the project files
+   - run:
+       name: Create new tag in the repository
+       command: scripts/new-tag.sh

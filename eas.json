@@ -6,7 +6,8 @@
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "config": "custom-build.yml"
     },
     "preview": {
       "distribution": "internal"
