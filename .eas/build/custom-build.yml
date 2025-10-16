@@ -2,9 +2,15 @@ build:
  name: Check out project source code
  steps:
    - eas/checkout # Only check out the project files
-   - run:
-       name: Setup GitHub access
-       command: scripts/setup-github-access.sh
+  #  - run:
+  #      name: Setup GitHub access
+  #      command: scripts/setup-github-access.sh
+   - setup_github_access
    - run:
        name: Create new tag in the repository
        command: scripts/new-tag.sh
+
+functions:
+ setup_github_access:
+   name: Setup GitHub access
+   path: ./setupGithubAccess
