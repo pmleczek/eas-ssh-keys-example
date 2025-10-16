@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "eas-build-on-success": "scripts/new-tag.sh",
+    "eas-build-post-install": "scripts/setup-github-access.sh",
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
     "android": "expo start --android",
