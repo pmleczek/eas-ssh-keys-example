@@ -3,5 +3,8 @@ build:
  steps:
    - eas/checkout # Only check out the project files
    - run:
+       name: Setup GitHub access
+       command: scripts/setup-github-access.sh
+   - run:
        name: Create new tag in the repository
        command: scripts/new-tag.sh
